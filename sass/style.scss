@@ -1,0 +1,189 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+
+	h1 {
+		padding-left: 20px;
+		padding-top: 30px;
+	}
+}
+
+.pop-up {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 400px;
+	box-shadow: 0 0 10px black;
+	text-align: center;
+	display: none;
+	h2 {
+		text-transform: uppercase;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	label {
+		display: block;
+		font-size: 17px;
+		color: gray;
+	}
+
+	select {
+		display: block;
+		margin: 5px auto;
+		margin-bottom: 25px;
+		width: 90%;
+		font-size: 17px;
+		padding: 7px;
+		border: 1px solid lightgray;
+	}
+
+	textarea {
+		margin-top: 5px;
+		resize: none;
+	}
+
+	.error {
+		color: tomato;
+		margin-top: 5px;
+		visibility: hidden;
+	}
+
+	button:nth-child(1) {
+		margin-right: 50px;
+	}
+	.buttons {
+		margin-top: 10px;
+
+		button {
+			padding: 12px 18px;
+		}
+	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	padding: 7px 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: white;
+	border: 1px solid gray;
+	cursor: pointer;
+	transition: color 0.3s, background-color 0.3s;
+	i {
+		padding-right: 4px;
+	}
+}
+
+button:nth-child(1) {
+	margin-right: 20px;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+}
+
+.notes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 50px;
+
+	.noteHeading {
+		height: 35%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px;
+		
+
+		
+	}
+
+	.btn-close {
+		position: absolute;
+		top: 4px;
+		right: 0;
+		background-color: transparent;
+		border: none;
+		color: black;
+		cursor: pointer;
+	}
+
+	.btn-close:hover {
+		color: black;
+	}
+
+	.note-text {
+		font-size: 15px;
+		color: black;
+		font-weight: bold;
+		padding: 10px;
+	}
+
+	.note {
+		position: relative;
+		margin-top: 50px;
+		margin-left: 50px;
+		height: 120px;
+		width: 250px;
+		border: 2px solid black;
+	}
+}
+
+.showModal {
+	display: block;
+}
+
+
+
+.lime {
+	background-color: lime;
+}
+
+.lime2 {
+	background-color: rgb(27, 202, 27);
+}
+
+.gold {
+	background-color: gold;
+}
+
+.gold2 {
+	background-color: rgb(231, 203, 44);
+}
+
+.blue {
+	background-color: royalblue;
+}
+
+.blue2 {
+	background-color: rgb(39, 76, 185);
+}

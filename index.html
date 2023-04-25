@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Notes</title>
+		<link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="nav">
+			<h1><i class="lni lni-firebase"></i>MyNotes</h1>
+			<div class="buttons">
+				<button class="add"><i class="lni lni-plus"></i> Dodaj</button>
+				<button class="clear">
+					<i class="lni lni-trash-can"></i> Usuń wszystkie
+				</button>
+			</div>
+		</div>
+		<div class="pop-up">
+			<h2>dodaj notatkę</h2>
+			<label for="categories">Wybierz kategorię</label>
+			<select id="categories">
+				<option value="0" disabled selected>-wybierz kategorię-</option>
+				<option value="shopping">Zakupy</option>
+				<option value="work">Praca</option>
+				<option value="other">Inne</option>
+			</select>
+			<label for="note">Wpisz treść notatki</label>
+			<textarea id="note" cols="71" rows="6"></textarea>
+			<p class="error">Uzupełnij wszystkie pola!</p>
+			<div class="buttons">
+				<button class="save"><i class="lni lni-save"> </i> Zapisz</button>
+				<button class="cancel"><i class="lni lni-cross-circle"></i>Anuluj
+				</button>
+			</div>
+		</div>
+        <div class="notes">
+            
+        </div>
+       
+		<script src="app.js"></script>
+	</body>
+</html>
